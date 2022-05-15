@@ -1,30 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <div class="has-background-dark hero is-fullheight is-family-code">
+      <!-- <DefaultLayout /> -->
+      <div class="main-content columns">
+        <router-view name="BoardLayout" 
+          class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile" />
+        <router-view 
+          class="container column is-10 p-5"/>
+      </div>
+    </div>
+  </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue';
+// import DefaultLayout from './layouts/DefaultLayout.vue';
+
+export default defineComponent({
+  components: {
+    // DefaultLayout,
+  },
+});
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
+
