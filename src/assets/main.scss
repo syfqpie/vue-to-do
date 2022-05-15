@@ -1,0 +1,27 @@
+// Variables
+@charset 'utf-8';
+
+// $scheme-main: $black;
+// $scheme-invert: $white;
+$navbar-height: 1rem;
+$menu-item-active-background-color: #00d1b2 !default;
+$input-color: hsl(0, 0%, 86%) !default;
+$input-focus-border-color: #00d1b2 !default;
+$input-focus-box-shadow-color: 0 0 0 0.125em rgb(0, 209, 178, 0.25) !default;
+
+
+// default 00d1b2
+// seconday 1f7e70
+
+// Bulma Import
+@import '~bulma';
+
+// Lottie
+// @import '~vue3-lottie/dist/style.css';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+
