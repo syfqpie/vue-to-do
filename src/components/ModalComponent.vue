@@ -30,7 +30,7 @@ export default defineComponent({
   name: 'ModalComponent',
   data() {
     return {
-      isModalOpen: true,
+      isModalOpen: false,
     };
   },
   mounted() {
@@ -48,43 +48,43 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.modal.is-active .modal-card {
-  animation: navAnim .2s ease-in-out;
-}
+// .modal.is-active .modal-card {
+//   animation: navAnim .2s ease-in-out;
+// }
 
-@keyframes navAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    height: 396px;
-  }
-}
+// @keyframes navAnim {
+//   0% {
+//     display: none;
+//     opacity: 0;
+//     height: 0;
+//   }
+//   1% {
+//     display: block;
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//     height: 396px;
+//   }
+// }
 
-.modal .modal-card {
-  animation: navAnimOpen .2s ease-in-out;
-}
+// .modal .modal-card {
+//   animation: navAnimOpen .2s ease-in-out;
+// }
 
-@keyframes navAnimOpen {
-  0% {
-    display: none;
-    opacity: 0;
-    max-height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    max-height: 396px;
-  }
-}
+// @keyframes navAnimOpen {
+//   0% {
+//     display: none;
+//     opacity: 0;
+//     max-height: 0;
+//   }
+//   1% {
+//     display: block;
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//     max-height: 396px;
+//   }
+// }
 </style>
